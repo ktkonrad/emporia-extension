@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Emporia Batch Exporter",
+  "version": "1.0",
+  "permissions": [
+    "webRequest",
+    "storage",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://api.emporiaenergy.com/*",
+    "https://web.emporiaenergy.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://web.emporiaenergy.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
