@@ -4,8 +4,7 @@
   "version": "1.0",
   "permissions": [
     "webRequest",
-    "storage",
-    "scripting"
+    "storage"
   ],
   "host_permissions": [
     "https://api.emporiaenergy.com/*",
